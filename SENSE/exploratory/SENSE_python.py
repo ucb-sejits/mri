@@ -214,9 +214,6 @@ def Etransp(data, csm, k_traj, weights, n, coils, wg, osf, scale):
 E_forward = lambda x: Eforward(x, smaps, k_spiral, w_spiral, n, coils, wg, osf, scale)
 E_transp  = lambda y:  Etransp(y, smaps, k_spiral, w_spiral, n, coils, wg, osf, scale)   
 
-# visualize images after one recon step
-im = NuFFT_adj( data_spiral, coils, k_spiral, w_spiral, n, osf, wg )
-
 
 # In[9]:
 
